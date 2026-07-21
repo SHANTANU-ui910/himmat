@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" fill="none">
+  <defs>
+    <linearGradient id="logoGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0ea5e9"/>
+      <stop offset="100%" style="stop-color:#0369a1"/>
+    </linearGradient>
+    <linearGradient id="bubbleGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#e0f2fe"/>
+      <stop offset="100%" style="stop-color:#bae6fd"/>
+    </linearGradient>
+  </defs>
+  <circle cx="60" cy="60" r="56" fill="url(#logoGrad)" opacity="0.12"/>
+  <circle cx="60" cy="60" r="48" fill="url(#logoGrad)"/>
+  <!-- Water droplet / bubble -->
+  <ellipse cx="60" cy="52" rx="22" ry="26" fill="url(#bubbleGrad)" opacity="0.95"/>
+  <ellipse cx="54" cy="46" rx="6" ry="8" fill="white" opacity="0.6"/>
+  <!-- Sparkle -->
+  <path d="M60 22 L62 28 L68 28 L63 32 L65 38 L60 34 L55 38 L57 32 L52 28 L58 28 Z" fill="#fbbf24"/>
+  <!-- Wave -->
+  <path d="M35 78 Q45 72 55 78 T75 78 T95 78" stroke="white" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.9"/>
+  <path d="M38 86 Q48 80 58 86 T78 86 T98 86" stroke="white" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.5"/>
+</svg>

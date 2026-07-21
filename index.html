@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="description" content="Shri Sanvariya Laundry — Premium laundry, dry cleaning & ironing in Indore. Book pickup slots, add to cart & pay via UPI or cash." />
+  <meta name="theme-color" content="#1e3a5f" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+  <title>Shri Sanvariya Laundry | Book Your Slot</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" type="image/png" href="assets/logo.png" />
+</head>
+<body>
+  <header class="header" id="header">
+    <nav class="nav container">
+      <a href="#home" class="nav__logo">
+        <img src="assets/logo.png" alt="Shri Sanvariya Laundry" class="nav__logo-img" />
+        <span class="nav__logo-text">Shri Sanvariya<span>Laundry</span></span>
+      </a>
+      <button type="button" class="nav__cart-btn" id="cart-toggle" aria-label="Open cart">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 002 1.61h9.72a2 2 0 002-1.61L23 6H6"/></svg>
+        <span class="nav__cart-badge" id="cart-badge" hidden>0</span>
+      </button>
+      <a href="#book" class="nav__book-btn">Book Now</a>
+      <ul class="nav__menu nav__menu--desktop" id="nav-menu">
+        <li><a href="#home" class="nav__link active">Home</a></li>
+        <li><a href="#services" class="nav__link">Prices</a></li>
+        <li><a href="#how-it-works" class="nav__link">How It Works</a></li>
+        <li><a href="#book" class="nav__link nav__link--cta">Book Slot</a></li>
+        <li><a href="#contact" class="nav__link">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero__bg">
+        <div class="hero__orb hero__orb--1"></div>
+        <div class="hero__orb hero__orb--2"></div>
+        <div class="hero__orb hero__orb--3"></div>
+      </div>
+      <div class="container hero__content">
+        <div class="hero__quick-book">
+          <div class="hero__card hero__card--main">
+            <div class="hero__card-top">
+              <img src="assets/logo.png" alt="" class="hero__card-logo" />
+              <div>
+                <p class="hero__card-label">Next pickup slot</p>
+                <p class="hero__slot-time" id="hero-next-slot">Today, 2:00 PM – 4:00 PM</p>
+              </div>
+            </div>
+            <a href="#book" class="btn btn--primary btn--full">Book This Slot</a>
+          </div>
+          <div class="hero__pills">
+            <span class="hero__pill">👔 Normal & Steam Press</span>
+            <span class="hero__pill">🧥 Dry Clean</span>
+            <span class="hero__pill">🚗 Free Pickup</span>
+          </div>
+        </div>
+
+        <div class="hero__text">
+          <span class="hero__badge">✨ Fresh clothes, zero hassle</span>
+          <h1 class="hero__title">
+            Shri Sanvariya<br />
+            <em>Laundry & Dry Clean</em>
+          </h1>
+          <p class="hero__desc">
+            Add services to cart, pick a slot, and pay by cash or UPI. We pick up, clean & deliver — right here in Indore.
+          </p>
+          <div class="hero__stats">
+            <div class="hero__stat">
+              <strong>500+</strong>
+              <span>Customers</span>
+            </div>
+            <div class="hero__stat">
+              <strong>Same Day</strong>
+              <span>Express</span>
+            </div>
+            <div class="hero__stat">
+              <strong>100%</strong>
+              <span>Quality</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="services section" id="services">
+      <div class="container">
+        <div class="section__header">
+          <span class="section__tag">Price List</span>
+          <h2 class="section__title">Our Services & Rates</h2>
+          <p class="section__desc">Tap + to add items to your cart. Dry clean prices are starting rates — final price may vary by fabric.</p>
+        </div>
+        <div class="services__grid" id="services-grid"></div>
+      </div>
+    </section>
+
+    <section class="how section" id="how-it-works">
+      <div class="container">
+        <div class="section__header section__header--center">
+          <span class="section__tag">Simple Process</span>
+          <h2 class="section__title">How It Works</h2>
+        </div>
+        <div class="how__timeline">
+          <div class="how__step">
+            <div class="how__step-marker"><span class="how__step-icon">🛒</span></div>
+            <div class="how__step-body">
+              <span class="how__step-num">Step 1</span>
+              <h3>Add to Cart</h3>
+              <p>Choose services from our price list and add them to your cart.</p>
+            </div>
+          </div>
+          <div class="how__step">
+            <div class="how__step-marker"><span class="how__step-icon">📅</span></div>
+            <div class="how__step-body">
+              <span class="how__step-num">Step 2</span>
+              <h3>Book a Slot</h3>
+              <p>Pick your date & time — slots update daily.</p>
+            </div>
+          </div>
+          <div class="how__step">
+            <div class="how__step-marker"><span class="how__step-icon">💳</span></div>
+            <div class="how__step-body">
+              <span class="how__step-num">Step 3</span>
+              <h3>Pay & Confirm</h3>
+              <p>Pay by cash on delivery or scan our UPI QR code.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="book section" id="book">
+      <div class="container">
+        <div class="book__wrapper">
+          <div class="book__info">
+            <span class="section__tag">Book Online</span>
+            <h2 class="section__title">Reserve Your Laundry Slot</h2>
+            <p class="book__info-desc">
+              Select a date, choose your time window, confirm your cart, and pick a payment method. All details are sent to us on WhatsApp instantly.
+            </p>
+            <ul class="book__features">
+              <li>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>
+                Free pickup & delivery
+              </li>
+              <li>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>
+                Daily updated slots
+              </li>
+              <li>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>
+                WhatsApp confirmation
+              </li>
+              <li>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>
+                Cash or UPI payment
+              </li>
+            </ul>
+          </div>
+
+          <form class="book__form" id="booking-form" novalidate>
+            <div class="form__group">
+              <label class="form__label">Select Date</label>
+              <div class="date-picker" id="date-picker"></div>
+            </div>
+
+            <div class="form__group">
+              <label class="form__label">Time Slot</label>
+              <div class="slot-picker" id="slot-picker"></div>
+            </div>
+
+            <div class="book__summary" id="booking-summary">
+              <div class="book__summary-row">
+                <span>Cart Items</span>
+                <strong id="summary-services">None</strong>
+              </div>
+              <div class="book__summary-row">
+                <span>Estimated Total</span>
+                <strong id="summary-total">₹0</strong>
+              </div>
+            </div>
+
+            <div class="form__group">
+              <label class="form__label">Payment Method</label>
+              <div class="payment-picker" id="payment-picker">
+                <button type="button" class="payment-option selected" data-payment="cod">
+                  <span class="payment-option__icon">💵</span>
+                  <span class="payment-option__label">Cash on Delivery</span>
+                </button>
+                <button type="button" class="payment-option" data-payment="qr">
+                  <span class="payment-option__icon">📱</span>
+                  <span class="payment-option__label">Pay on QR (UPI)</span>
+                </button>
+              </div>
+              <div class="qr-payment-section" id="qr-payment-section" hidden>
+                <p class="qr-payment-section__hint">Scan this QR to pay after confirming your booking:</p>
+                <img src="assets/payment-qr.png" alt="UPI Payment QR - Mrs. Ranu Rajak" class="qr-payment-section__img" />
+                <p class="qr-payment-section__upi">UPI: BHARATPE2W0V0X7C0C76490@unitype</p>
+              </div>
+            </div>
+
+            <div class="form__row">
+              <div class="form__group">
+                <label class="form__label" for="name">Full Name</label>
+                <input type="text" id="name" name="name" class="form__input" placeholder="Your name" required />
+              </div>
+              <div class="form__group">
+                <label class="form__label" for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" class="form__input" placeholder="+91 98765 43210" required />
+              </div>
+            </div>
+
+            <div class="form__group">
+              <label class="form__label" for="address">Pickup Address</label>
+              <textarea id="address" name="address" class="form__input form__textarea" rows="2" placeholder="House no., street, area, city" required></textarea>
+            </div>
+
+            <div class="form__group">
+              <label class="form__label" for="notes">Special Instructions <span class="form__optional">(optional)</span></label>
+              <textarea id="notes" name="notes" class="form__input form__textarea" rows="2" placeholder="Fabric care, gate code, etc."></textarea>
+            </div>
+
+            <button type="submit" class="btn btn--primary btn--full btn--lg">
+              Confirm & Send on WhatsApp
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact section" id="contact">
+      <div class="container">
+        <div class="contact__grid">
+          <div class="contact__info">
+            <span class="section__tag">Get in Touch</span>
+            <h2 class="section__title">Visit Us in Indore</h2>
+            <p>Have questions? Call, WhatsApp, or visit our shop at Amirat Palace.</p>
+            <div class="contact__items">
+              <a href="tel:+919993989169" class="contact__item">
+                <div class="contact__icon">📞</div>
+                <div>
+                  <strong>Call</strong>
+                  <span>+91 99939 89169</span>
+                </div>
+              </a>
+              <a href="https://wa.me/916262505014" class="contact__item" target="_blank" rel="noopener">
+                <div class="contact__icon">💬</div>
+                <div>
+                  <strong>WhatsApp</strong>
+                  <span>+91 62625 05014</span>
+                </div>
+              </a>
+              <div class="contact__item">
+                <div class="contact__icon">📍</div>
+                <div>
+                  <strong>Address</strong>
+                  <span>Amirat Palace, Shop No. 13, Indore, MP - 452010</span>
+                </div>
+              </div>
+              <div class="contact__item">
+                <div class="contact__icon">🕐</div>
+                <div>
+                  <strong>Hours</strong>
+                  <span>Mon – Sat: 8 AM – 8 PM</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="contact__map">
+            <a href="https://maps.google.com/?q=Amirat+Palace+Shop+13+Indore" target="_blank" rel="noopener" class="contact__map-link">
+              <img src="assets/logo.png" alt="Shri Sanvariya Laundry" class="contact__map-logo" />
+              <p>Amirat Palace, Shop No. 13<br />Indore, Madhya Pradesh 452010</p>
+              <span class="btn btn--ghost btn--sm">Open in Maps</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <img src="assets/logo.png" alt="Shri Sanvariya Laundry" class="footer__logo" />
+        <p>Premium laundry & dry cleaning in Indore. Book online, pay by cash or UPI, and get fresh clothes every time.</p>
+      </div>
+      <div class="footer__links">
+        <h4>Quick Links</h4>
+        <a href="#home">Home</a>
+        <a href="#services">Prices</a>
+        <a href="#book">Book Slot</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="footer__links">
+        <h4>Contact</h4>
+        <a href="tel:+919993989169">+91 99939 89169</a>
+        <a href="https://wa.me/916262505014" target="_blank" rel="noopener">WhatsApp: 6262505014</a>
+        <a href="#services">Normal Press from ₹7</a>
+        <a href="#services">Dry Clean from ₹120</a>
+      </div>
+    </div>
+    <div class="footer__bottom container">
+      <p>&copy; 2026 Shri Sanvariya Laundry. All rights reserved.</p>
+      <p>Amirat Palace, Shop No. 13, Indore</p>
+    </div>
+  </footer>
+
+  <!-- Cart Drawer -->
+  <div class="cart-drawer" id="cart-drawer">
+    <div class="cart-drawer__backdrop" id="cart-backdrop"></div>
+    <div class="cart-drawer__panel">
+      <div class="cart-drawer__header">
+        <h2>Your Cart</h2>
+        <button type="button" class="cart-drawer__close" id="cart-close" aria-label="Close cart">×</button>
+      </div>
+      <div class="cart-drawer__body" id="cart-items">
+        <p class="cart-empty">Your cart is empty.</p>
+      </div>
+      <div class="cart-drawer__footer">
+        <div class="cart-drawer__total">
+          <span>Total</span>
+          <strong id="cart-total">₹0</strong>
+        </div>
+        <button type="button" class="btn btn--primary btn--full" id="cart-checkout">Proceed to Book</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Success Modal -->
+  <div class="modal" id="success-modal" aria-hidden="true">
+    <div class="modal__backdrop"></div>
+    <div class="modal__content">
+      <div class="modal__icon">✅</div>
+      <h2>Booking Sent!</h2>
+      <p id="modal-message">Your booking details have been sent on WhatsApp.</p>
+      <div class="modal__details" id="modal-details"></div>
+      <button class="btn btn--primary btn--full" id="modal-close">Done</button>
+    </div>
+  </div>
+
+  <!-- QR Payment Modal -->
+  <div class="modal" id="qr-modal" aria-hidden="true">
+    <div class="modal__backdrop"></div>
+    <div class="modal__content">
+      <div class="modal__icon">📱</div>
+      <h2>Pay via UPI</h2>
+      <p>Scan the QR code below to complete your payment:</p>
+      <img src="assets/payment-qr.png" alt="UPI Payment QR" class="qr-modal__img" />
+      <p class="qr-modal__upi">UPI ID: BHARATPE2W0V0X7C0C76490@unitype</p>
+      <p class="qr-modal__name">MRS. RANU RAJAK</p>
+      <button class="btn btn--primary btn--full" id="qr-modal-close">Done</button>
+    </div>
+  </div>
+
+  <nav class="bottom-nav" id="bottom-nav" aria-label="Mobile navigation">
+    <a href="#home" class="bottom-nav__item active" data-section="home">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+      <span>Home</span>
+    </a>
+    <a href="#services" class="bottom-nav__item" data-section="services">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
+      <span>Prices</span>
+    </a>
+    <a href="#book" class="bottom-nav__item bottom-nav__item--book" data-section="book">
+      <div class="bottom-nav__book-circle">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+      </div>
+      <span>Book</span>
+    </a>
+    <a href="#how-it-works" class="bottom-nav__item" data-section="how-it-works">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+      <span>Process</span>
+    </a>
+    <a href="#contact" class="bottom-nav__item" data-section="contact">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+      <span>Contact</span>
+    </a>
+  </nav>
+
+  <a href="#book" class="fab" id="fab" aria-label="Book a slot">
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/><line x1="12" y1="14" x2="12" y2="18"/><line x1="10" y1="16" x2="14" y2="16"/></svg>
+    Book Slot
+  </a>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
