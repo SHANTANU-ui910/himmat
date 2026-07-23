@@ -38,7 +38,7 @@ const SERVICE_CATEGORIES = [
     nameHi: 'प्रीमियम प्रेस',
     icon: '✨',
     items: [
-      { id: 'pp-shirt', name: 'Shirt / Pant', nameHi: 'शर्ट / पैंट', price: 9 },
+      { id: 'pp-shirt', name: 'Shirt / Pant', nameHi: 'शर्ट / पैंट', price: 25 },
       { id: 'pp-saree', name: 'Saree', nameHi: 'साड़ी', price: 80 },
       { id: 'pp-lehenga', name: 'Lehenga-Chunni', nameHi: 'लहंगा चुन्नी', price: 120 },
     ],
