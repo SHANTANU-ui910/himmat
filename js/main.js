@@ -50,6 +50,7 @@ const SERVICE_CATEGORIES = [
     icon: '🧥',
     startingFrom: true,
     items: [
+      { id: 'dc-shirt', name: 'Shirt / Pant', nameHi: 'शर्ट / पैंट', price: 100 },
       { id: 'dc-lehenga', name: 'Lehenga-Chunni', nameHi: 'लहंगा - चुन्नी', price: 300 },
       { id: 'dc-blanket', name: 'Blanket', nameHi: 'ब्लैंकेट', price: 400 },
       { id: 'dc-curtains', name: 'Curtains', nameHi: 'पर्दे', price: 120 },
